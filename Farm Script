@@ -5,22 +5,22 @@ local Window = Rayfield:CreateWindow({
 	LoadingSubtitle = "by Gunonm_alt/Zen",
 	ConfigurationSaving = {
 		Enabled = true,
-		FolderName = nil, -- Create a custom folder for your hub/game
+		FolderName = nil, 
 		FileName = "Big Hub"
 	},
         Discord = {
         	Enabled = false,
-        	Invite = "discord.gg/gjrERJUp", -- The Discord invite code, do not include discord.gg/
-        	RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+        	Invite = "discord.gg/gjrERJUp", 
+        	RememberJoins = true 
         },
-	KeySystem = true, -- Set this to true to use our key system
+	KeySystem = true, 
 	KeySettings = {
 		Title = "Skull Hub | Boxing Simulator 2 [UPDATE]",
 		Subtitle = "Key System",
 		Note = "Join The Discord For Key (discord.gg/gjrERJUp)",
 		FileName = "Skull Hub Key",
 		SaveKey = true,
-		GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+		GrabKeyFromSite = false,
 		Key = "Kj89AdB341PGG568"
 	}
 })
@@ -28,7 +28,7 @@ Rayfield:Notify({
     Title = "Join The Discord!",
     Content = "discord.gg/gjrERJUp",
     Duration = 6.5,
-    Actions = { -- Notification Buttons
+    Actions = { 
         Ignore = {
             Name = "Okay!",
             Callback = function()
@@ -42,7 +42,7 @@ local Section = Tab:CreateSection("Farming")
 local Toggle = Tab:CreateToggle({
 	Name = "Equip Dw",
 	CurrentValue = false,
-	Flag = "Equip Dw1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Flag = "Equip Dw1",
 	Callback = function(state)
 		print(state)
 		if state then
@@ -65,7 +65,7 @@ local Toggle = Tab:CreateToggle({
 local Toggle = Tab:CreateToggle({
 	Name = "Farm Dw",
 	CurrentValue = false,
-	Flag = "Farm Dw1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Flag = "Farm Dw1", 
 	Callback = function(state)
 		print(state)
 		if state then
@@ -86,7 +86,7 @@ local Toggle = Tab:CreateToggle({
 local Toggle = Tab:CreateToggle({
 	Name = "Lock Player",
 	CurrentValue = false,
-	Flag = "Lock Player1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Flag = "Lock Player1",
 	Callback = function(state)
 		print(state)
 		if state then
@@ -137,7 +137,7 @@ local Click = Tab:CreateButton({
     textlabel.TextColor3 = Color3.fromRGB(0, 0, 0)
     textlabel.TextSize = 30.000
 
-    local function XVYMLY_fake_script() -- ScreenGui.LocalScript 
+    local function XVYMLY_fake_script()
         local script = Instance.new('LocalScript', ScreenGui)
 
         Frame = script.Parent.Frame
@@ -221,9 +221,15 @@ local Button = Tab:CreateButton({
 	end,
 })
 local Button = Tab:CreateButton({
+	Name = "Hide Invortory",
+	Callback = function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/8W1draqT", true))()
+	end,
+})
+local Button = Tab:CreateButton({
 	Name = "Low Ping",
 	Callback = function()
-        local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
+        local decalsyeeted = true
         local g = game
         local w = g.Workspace
         local l = g.Lighting
@@ -280,12 +286,12 @@ local Button = Tab:CreateButton({
         ab.Text="You went idle and ROBLOX tried to kick you but we reflected it!"wait(2)ab.Text="Script Re-Enabled"end)
 	end,
 })
-local Tab = Window:CreateTab("Dropping") -- Title, Image
+local Tab = Window:CreateTab("Dropping")
 local Section = Tab:CreateSection("Dropping")
 local Toggle = Tab:CreateToggle({
 	Name = "Equip Dw (For Dropping)",
 	CurrentValue = false,
-	Flag = "Equip Dw1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Flag = "Equip Dw1",
 	Callback = function(state)
 		print(state)
 		if state then
@@ -347,7 +353,7 @@ local Button = Tab:CreateButton({
         ab.Text="You went idle and ROBLOX tried to kick you but we reflected it!"wait(2)ab.Text="Script Re-Enabled"end)
 	end,
 })
-local Tab = Window:CreateTab("Misc") -- Title, Image
+local Tab = Window:CreateTab("Misc")
 local Section = Tab:CreateSection("Misc")
 local Button = Tab:CreateButton({
 	Name = "Small",
@@ -419,5 +425,5 @@ local Button = Tab:CreateButton({
 		end)
 	end,
 })
-local Tab = Window:CreateTab("Credits") -- Title, Image
+local Tab = Window:CreateTab("Credits")
 local Section = Tab:CreateSection("Credits - Gunonm_alt / Zen")
