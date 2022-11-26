@@ -1,6 +1,6 @@
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 local Window = Rayfield:CreateWindow({
-	Name = "Skull Hub | Boxing Simulator 2 [UPDATE]",
+	Name = "Skull Hub V.1 | Boxing Simulator 2 [UPDATE]",
 	LoadingTitle = "Skull Hub | Boxing Simulator 2 [UPDATE]",
 	LoadingSubtitle = "by Gunonm_alt / Zen",
 	ConfigurationSaving = {
