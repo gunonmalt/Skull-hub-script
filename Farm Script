@@ -1,7 +1,7 @@
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 local Window = Rayfield:CreateWindow({
 	Name = "Skull Hub V.1 | Boxing Simulator 2 [UPDATE]",
-	LoadingTitle = "Skull Hub | Boxing Simulator 2 [UPDATE]",
+	LoadingTitle = "Skull Hub V.1 | Boxing Simulator 2 [UPDATE]",
 	LoadingSubtitle = "by Gunonm_alt / Zen",
 	ConfigurationSaving = {
 		Enabled = true,
@@ -15,7 +15,7 @@ local Window = Rayfield:CreateWindow({
         },
 	KeySystem = true, 
 	KeySettings = {
-		Title = "Skull Hub | Boxing Simulator 2 [UPDATE]",
+		Title = "Skull Hub V.1 | Boxing Simulator 2 [UPDATE]",
 		Subtitle = "Key System",
 		Note = "Join The Discord For Key (discord.gg/dX2UYnGp)",
 		FileName = "Skull Hub Key",
