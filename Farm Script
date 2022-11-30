@@ -298,7 +298,7 @@ local Toggle = Tab:CreateToggle({
 			print("Toggle On")
 		_G.Equip = true
 		while _G.Equip do
-			wait()
+			wait(1.5)
 			for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
 				if v.Name == "Double Weight" then
 					v.Parent = game.Players.LocalPlayer.Character
